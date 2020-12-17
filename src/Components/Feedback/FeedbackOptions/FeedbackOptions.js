@@ -7,7 +7,7 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <Container>
       {options.map(option => (
-        <FeedbackButton name={option} callback={onLeaveFeedback} />
+        <FeedbackButton key={option} name={option} callback={onLeaveFeedback} />
       ))}
     </Container>
   );
